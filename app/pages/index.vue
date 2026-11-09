@@ -10,6 +10,10 @@ useSeoMeta({
   ogTitle: () => t('meta.title'),
   ogDescription: () => t('meta.description', { years }),
   ogType: 'website',
+  ogImage: 'https://donisamalo.com/og.png',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  twitterCard: 'summary_large_image',
 })
 </script>
 

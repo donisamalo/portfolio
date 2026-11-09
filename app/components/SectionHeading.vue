@@ -59,9 +59,24 @@ defineProps<{
   line-height: 1.1;
 }
 
+/* The rule draws itself in once the heading reveals */
 .rule {
   flex: 1;
   height: 1px;
   background: var(--line);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s var(--ease-out) 150ms;
+}
+
+.sec-head.in .rule {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rule {
+    transform: none;
+    transition: none;
+  }
 }
 </style>

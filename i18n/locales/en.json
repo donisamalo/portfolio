@@ -80,7 +80,15 @@
   "footer": {
     "rights": "Doni Samalo",
     "built": "Built with Nuxt · Deployed on Vercel",
+    "source": "View source",
     "top": "Back to top"
+  },
+  "error": {
+    "kicker": "Wrong turn",
+    "title404": "This page doesn't exist.",
+    "titleGeneric": "Something went wrong.",
+    "body": "The page you're looking for may have moved, or never existed. Let's get you back on track.",
+    "cta": "Back to home"
   },
   "common": {
     "present": "Present",

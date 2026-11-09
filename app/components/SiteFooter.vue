@@ -11,7 +11,16 @@ function backToTop() {
   <footer class="footer">
     <div class="container footer-inner">
       <span>© {{ year }} {{ t('footer.rights') }}</span>
-      <span class="built">{{ t('footer.built') }}</span>
+      <span class="built">
+        {{ t('footer.built') }}
+        <span aria-hidden="true">·</span>
+        <a
+          href="https://github.com/donisamalo/portfolio"
+          target="_blank"
+          rel="noopener"
+          class="source"
+        >{{ t('footer.source') }}</a>
+      </span>
       <button type="button" class="top" @click="backToTop">
         {{ t('footer.top') }}
         <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -37,6 +46,19 @@ function backToTop() {
   font-family: var(--font-mono);
   font-size: 12.5px;
   color: var(--text-3);
+}
+
+.source {
+  color: var(--text-2);
+  border-bottom: 1px solid transparent;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .source:hover {
+    color: var(--text);
+    border-bottom-color: var(--text-3);
+  }
 }
 
 .top {

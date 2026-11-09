@@ -169,7 +169,7 @@ const { t } = useI18n()
   background-size: 26px 26px;
 }
 
-/* Real screenshot: grayscale at rest, color on hover */
+/* Real screenshot: grayscale + slightly zoomed at rest, settles into color on hover */
 .cover-img {
   position: absolute;
   inset: 0;
@@ -178,7 +178,8 @@ const { t } = useI18n()
   object-fit: cover;
   object-position: top;
   filter: grayscale(1);
-  transition: filter 320ms ease;
+  transform: scale(1.04);
+  transition: filter 320ms ease, transform 700ms var(--ease-out);
 }
 
 .cover.has-img::after {
@@ -188,6 +189,13 @@ const { t } = useI18n()
 @media (hover: hover) and (pointer: fine) {
   .card:hover .cover-img {
     filter: grayscale(0);
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-img {
+    transform: none;
   }
 }
 

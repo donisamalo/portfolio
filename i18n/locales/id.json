@@ -80,7 +80,15 @@
   "footer": {
     "rights": "Doni Samalo",
     "built": "Dibangun dengan Nuxt · Di-deploy di Vercel",
+    "source": "Lihat kode",
     "top": "Kembali ke atas"
+  },
+  "error": {
+    "kicker": "Salah belok",
+    "title404": "Halaman ini tidak ada.",
+    "titleGeneric": "Terjadi kesalahan.",
+    "body": "Halaman yang kamu cari mungkin sudah pindah, atau memang tidak pernah ada. Yuk kembali ke jalur.",
+    "cta": "Kembali ke beranda"
   },
   "common": {
     "present": "Sekarang",

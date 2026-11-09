@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Doni Samalo - Frontend Engineer",
+    "description": "Frontend engineer with {years}+ years of experience building fast, maintainable web apps with Vue & Nuxt - currently crafting Klikpajak & Jurnal at Mekari."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Doni Samalo - Software Engineer, Frontend",
+    "line1": "Building web that feels",
+    "line2": "fast & delightful,",
+    "line3": "down to the last detail.",
+    "summary": "{years} years of turning designs into responsive, maintainable applications with Vue & Nuxt. Currently shipping Klikpajak & Jurnal at Mekari.",
+    "ctaWork": "See selected work",
+    "ctaContact": "Get in touch",
+    "status": "Currently building at Mekari",
+    "location": "West Jakarta, Indonesia"
+  },
+  "about": {
+    "title": "About",
+    "p1": "I'm Doni - a frontend engineer based in West Jakarta. My home turf is the Vue ecosystem (Vue, Nuxt, Pinia), with working fluency in React and Next.js. I've shipped products across travel, insurance, education, media, and fintech.",
+    "p2": "I care about the details users never consciously notice: clean component APIs, test coverage that lets teams move fast, performance budgets, and interfaces that respond instantly. Lately that means tax & accounting products used by thousands of Indonesian businesses.",
+    "stats": {
+      "years": "Years of experience"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "mekari": "Building Klikpajak & Jurnal - Mekari's tax and accounting platforms. Helped reduce error rates in Datadog, kept 90%+ unit-test coverage on new components, built reusable base components with Storybook, and contributed to the Options API → Composition API migration toward Vue 3.",
+      "kompas": "Built the internal Kognisi learning platform and its CMS from scratch with Nuxt 2, implemented SSO with Keycloak, supported the external platform on Nuxt 3, and set up Sentry for real-time error monitoring.",
+      "schoters": "Built and maintained the LMS website with Nuxt 2 - new features, bug fixes, and overall application stability.",
+      "qoala": "Helped migrate the insurance app from client-side to server-side rendering for performance and SEO, tuned Workbox caching for PWA, implemented GTM & GA tracking, and wrote unit tests with Jest.",
+      "umroh": "Built the user-facing and vendor platforms from scratch with Nuxt 2, collaborating closely with SEO specialists to optimize search visibility.",
+      "aktivaku": "Developed the funding module - registration flow adjustments, funding list and detail pages.",
+      "bridestory": "Sliced pages for Bridestory Fair with React and built a parallax landing page with Nuxt 2."
+    }
+  },
+  "work": {
+    "title": "Selected Work",
+    "lead": "Products I've helped build and ship - from day-one codebases to platforms serving thousands of businesses.",
+    "visit": "Visit site",
+    "items": {
+      "klikpajak": "Mekari's online tax platform. Feature development, performance audits with Lighthouse & GTmetrix, and a steady migration path from Vue 2.7 toward Vue 3.",
+      "jurnal": "Cloud accounting software by Mekari. Reusable base components documented in Storybook, 90%+ test coverage on new work, built on Vue 3 and Mekari Pixel.",
+      "kognisi": "Kompas Gramedia's learning ecosystem - internal platform & CMS built from scratch with Nuxt 2, plus an external platform on Nuxt 3 with SSO via Keycloak.",
+      "qoala": "Insurance platform for Indonesia. CSR → SSR migration, PWA caching with Workbox, and analytics with GTM & Google Analytics.",
+      "umroh": "Umrah travel platform built from scratch - user and vendor sites, optimized hand-in-hand with SEO specialists.",
+      "aktivaku": "Peer-to-peer funding platform. Built the funding module: registration flow, funding list and detail pages.",
+      "bridestory": "Wedding marketplace. Sliced pages for Bridestory Fair with React and built a parallax landing page with Nuxt 2."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": {
+      "core": "Languages & Core",
+      "frameworks": "Frameworks & State",
+      "ui": "UI & Styling",
+      "quality": "Testing & Quality",
+      "tooling": "Tooling & Delivery"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "gpa": "GPA"
+  },
+  "contact": {
+    "title1": "Let's build something",
+    "title2": "worth shipping.",
+    "body": "I'm always happy to talk frontend, product, or a role where craft matters. The fastest way to reach me is email.",
+    "cta": "Say hello",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "rights": "Doni Samalo",
+    "built": "Built with Nuxt · Deployed on Vercel",
+    "top": "Back to top"
+  },
+  "common": {
+    "present": "Present",
+    "type": {
+      "full": "Full-time",
+      "part": "Part-time",
+      "intern": "Internship"
+    }
+  }
+}

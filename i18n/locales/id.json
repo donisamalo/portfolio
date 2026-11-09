@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Doni Samalo - Frontend Engineer",
+    "description": "Frontend engineer dengan {years}+ tahun pengalaman membangun aplikasi web yang cepat dan maintainable dengan Vue & Nuxt - kini mengembangkan Klikpajak & Jurnal di Mekari."
+  },
+  "nav": {
+    "about": "Tentang",
+    "experience": "Pengalaman",
+    "work": "Karya",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "kicker": "Doni Samalo - Software Engineer, Frontend",
+    "line1": "Membangun web yang",
+    "line2": "cepat & memukau,",
+    "line3": "sampai ke detail terkecil.",
+    "summary": "{years} tahun mengubah desain menjadi aplikasi yang responsif dan maintainable dengan Vue & Nuxt. Kini mengembangkan Klikpajak & Jurnal di Mekari.",
+    "ctaWork": "Lihat karya pilihan",
+    "ctaContact": "Hubungi saya",
+    "status": "Sedang berkarya di Mekari",
+    "location": "Jakarta Barat, Indonesia"
+  },
+  "about": {
+    "title": "Tentang",
+    "p1": "Saya Doni - frontend engineer yang berbasis di Jakarta Barat. Wilayah utama saya adalah ekosistem Vue (Vue, Nuxt, Pinia), dengan kefasihan kerja di React dan Next.js. Saya pernah merilis produk di ranah travel, asuransi, pendidikan, media, dan fintech.",
+    "p2": "Saya peduli pada detail yang tak pernah disadari pengguna: API komponen yang bersih, cakupan test yang membuat tim bergerak cepat, bujet performa, dan antarmuka yang merespons seketika. Belakangan ini wujudnya adalah produk pajak & akuntansi yang dipakai ribuan bisnis di Indonesia.",
+    "stats": {
+      "years": "Tahun pengalaman"
+    }
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "items": {
+      "mekari": "Mengembangkan Klikpajak & Jurnal - platform pajak dan akuntansi Mekari. Membantu menurunkan error rate di Datadog, menjaga cakupan unit test 90%+ untuk komponen baru, membangun base component reusable dengan Storybook, dan berkontribusi pada migrasi Options API → Composition API menuju Vue 3.",
+      "kompas": "Membangun platform pembelajaran internal Kognisi beserta CMS-nya dari nol dengan Nuxt 2, mengimplementasikan SSO dengan Keycloak, mendukung platform eksternal di Nuxt 3, dan memasang Sentry untuk pemantauan error real-time.",
+      "schoters": "Membangun dan memelihara situs LMS dengan Nuxt 2 - fitur baru, perbaikan bug, dan stabilitas aplikasi secara keseluruhan.",
+      "qoala": "Membantu migrasi aplikasi asuransi dari client-side ke server-side rendering demi performa dan SEO, menyetel caching Workbox untuk PWA, memasang pelacakan GTM & GA, dan menulis unit test dengan Jest.",
+      "umroh": "Membangun platform pengguna dan vendor dari nol dengan Nuxt 2, berkolaborasi erat dengan spesialis SEO untuk mengoptimalkan visibilitas pencarian.",
+      "aktivaku": "Mengembangkan modul pendanaan - penyesuaian alur registrasi, halaman daftar dan detail pendanaan.",
+      "bridestory": "Melakukan slicing halaman Bridestory Fair dengan React dan membangun landing page dengan efek parallax menggunakan Nuxt 2."
+    }
+  },
+  "work": {
+    "title": "Karya Pilihan",
+    "lead": "Produk yang ikut saya bangun dan rilis - dari codebase hari pertama hingga platform yang melayani ribuan bisnis.",
+    "visit": "Kunjungi situs",
+    "items": {
+      "klikpajak": "Platform pajak online dari Mekari. Pengembangan fitur, audit performa dengan Lighthouse & GTmetrix, dan jalur migrasi bertahap dari Vue 2.7 menuju Vue 3.",
+      "jurnal": "Software akuntansi cloud dari Mekari. Base component reusable terdokumentasi di Storybook, cakupan test 90%+ untuk pekerjaan baru, dibangun dengan Vue 3 dan Mekari Pixel.",
+      "kognisi": "Ekosistem pembelajaran Kompas Gramedia - platform internal & CMS dibangun dari nol dengan Nuxt 2, plus platform eksternal di Nuxt 3 dengan SSO via Keycloak.",
+      "qoala": "Platform asuransi untuk Indonesia. Migrasi CSR → SSR, caching PWA dengan Workbox, dan analitik dengan GTM & Google Analytics.",
+      "umroh": "Platform travel umrah yang dibangun dari nol - situs pengguna dan vendor, dioptimalkan bersama spesialis SEO.",
+      "aktivaku": "Platform pendanaan peer-to-peer. Membangun modul pendanaan: alur registrasi, halaman daftar dan detail pendanaan.",
+      "bridestory": "Marketplace pernikahan. Slicing halaman Bridestory Fair dengan React dan membangun landing page parallax dengan Nuxt 2."
+    }
+  },
+  "skills": {
+    "title": "Keahlian",
+    "groups": {
+      "core": "Bahasa & Dasar",
+      "frameworks": "Framework & State",
+      "ui": "UI & Styling",
+      "quality": "Testing & Kualitas",
+      "tooling": "Tooling & Delivery"
+    }
+  },
+  "education": {
+    "title": "Pendidikan",
+    "gpa": "IPK"
+  },
+  "contact": {
+    "title1": "Ayo bangun sesuatu yang",
+    "title2": "layak dirilis.",
+    "body": "Saya selalu senang berdiskusi soal frontend, produk, atau peran yang menghargai craftsmanship. Cara tercepat menghubungi saya adalah email.",
+    "cta": "Sapa saya",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "rights": "Doni Samalo",
+    "built": "Dibangun dengan Nuxt · Di-deploy di Vercel",
+    "top": "Kembali ke atas"
+  },
+  "common": {
+    "present": "Sekarang",
+    "type": {
+      "full": "Purnawaktu",
+      "part": "Paruh waktu",
+      "intern": "Magang"
+    }
+  }
+}

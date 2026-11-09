@@ -16,8 +16,13 @@ const years = yearsOfExperience()
           <p v-reveal="80" class="about-p">{{ t('about.p2') }}</p>
         </div>
 
-        <div v-reveal="140" class="about-stats">
-          <StatNumber :value="years" suffix="+" :label="t('about.stats.years')" />
+        <div v-reveal="140" class="about-side">
+          <figure class="about-photo">
+            <img src="/portrait.jpg" alt="Doni Samalo" loading="lazy" width="800" height="1066">
+          </figure>
+          <div class="about-stats">
+            <StatNumber :value="years" suffix="+" :label="t('about.stats.years')" />
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +48,40 @@ const years = yearsOfExperience()
 
 .about-p::first-letter {
   color: var(--text);
+}
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Kept deliberately small - a note in the margin, not a hero portrait */
+.about-photo {
+  max-width: 240px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 320ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-photo:hover img {
+    filter: grayscale(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-photo img {
+    transition: none;
+  }
 }
 
 .about-stats {

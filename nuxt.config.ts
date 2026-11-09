@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
 
-  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@vueuse/nuxt', '@vercel/analytics/nuxt'],
 
   devtools: { enabled: true },
 

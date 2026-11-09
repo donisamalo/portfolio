@@ -4,7 +4,8 @@ import { yearsOfExperience } from '~/data/resume'
 const { t } = useI18n()
 const years = yearsOfExperience()
 
-/* Subtle parallax: hero content drifts slower than the page and fades out.
+/* Two-layer parallax: content lags behind the scroll while the dot grid
+   drifts the opposite way - the speed contrast is what sells the depth.
    Client-only (mounted gate) so SSR markup carries no inline style. */
 const mounted = ref(false)
 onMounted(() => {
@@ -18,14 +19,21 @@ const parallaxStyle = computed(() => {
   if (!mounted.value || reduced.value === 'reduce') return undefined
   const offset = Math.min(y.value, 720)
   return {
-    transform: `translate3d(0, ${Math.round(offset * 0.16)}px, 0)`,
-    opacity: String(Math.max(1 - offset / 820, 0)),
+    transform: `translate3d(0, ${Math.round(offset * 0.22)}px, 0)`,
+    opacity: String(Math.max(1 - offset / 760, 0)),
   }
+})
+
+const dotsStyle = computed(() => {
+  if (!mounted.value || reduced.value === 'reduce') return undefined
+  const offset = Math.min(y.value, 720)
+  return { transform: `translate3d(0, ${Math.round(offset * -0.14)}px, 0)` }
 })
 </script>
 
 <template>
   <section class="hero">
+    <div class="hero-dots" :style="dotsStyle" aria-hidden="true" />
     <div class="container hero-inner" :style="parallaxStyle">
       <p class="kicker hero-kicker" data-rise style="--d: 0ms">
         {{ t('hero.kicker') }}
@@ -87,16 +95,17 @@ const parallaxStyle = computed(() => {
   pointer-events: none;
 }
 
-/* Faint dot grid in the hero's negative space */
-.hero::after {
-  content: '';
+/* Faint dot grid in the hero's negative space - its own layer so it can
+   counter-drift against the content on scroll */
+.hero-dots {
   position: absolute;
-  inset: 0;
+  inset: -10% 0;
   background-image: radial-gradient(color-mix(in srgb, var(--text) 15%, transparent) 1px, transparent 1px);
   background-size: 30px 30px;
-  -webkit-mask-image: radial-gradient(85% 70% at 75% 18%, #000, transparent 72%);
-  mask-image: radial-gradient(85% 70% at 75% 18%, #000, transparent 72%);
+  -webkit-mask-image: radial-gradient(85% 70% at 75% 25%, #000, transparent 72%);
+  mask-image: radial-gradient(85% 70% at 75% 25%, #000, transparent 72%);
   pointer-events: none;
+  will-change: transform;
 }
 
 .hero-inner {
